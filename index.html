@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <title>Document</title>
 </head>
 
@@ -12,20 +14,23 @@
 
     <header>
         <div class="title">
-            <a href="#">AluraGeek</a>
+            <img src="./img/Logo.png">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" id="search" name="search" placeholder="O que deseja procurar?">
         </div>
 
         <div class="header_links">
             <nav class="main_header_nav">
                 <a href="#" class="btn">Iniciar Sessão</a></li>
-                <input type="text" id="search" name="search" placeholder="O que deseja procurar?">
             </nav>
         </div>
     </header>
 
     <div class="banner">
         <h1>Dezembro Promocional</h1>
-        <p>Produtos selecionados com 33% de desconto</p>
+        Produtos selecionados com 33% de desconto
 
         <a href="#" class="btn">Ver Consoles</a>
 
@@ -33,7 +38,7 @@
 
     <main>
 
-        <div class="section" id="star_wars">
+        <div class="section">
 
             <h2>Star Wars</h2>
 
@@ -367,26 +372,30 @@
                 </div>
 
             </div>
+        </div>
+
     </main>
 
     <footer>
 
-        <div class="footer">
+        <div class="main_footer_elements">
+            <nav>
+                <div class="title">
+                    <img src="./img/Logo.png">
+                </div>
 
-            <div class="title">
-                <a href="#">AluraGeek</a>
-            </div>
-
-            <div contact="footer links">
-                <nav>
+                <div contact="footer_links">
                     <a href="#">Quem somos nós</a>
                     <a href="#">Política de Privacidade</a>
                     <a href="#">Programa de fidelidade</a>
                     <a href="#">Nossas lojas</a>
                     <a href="#">Quero ser franqueado</a>
                     <a href="#">Anuncie aqui</a>
-                </nav>
-            </div>
+                    </ul>
+                </div>
+
+            </nav>
+
 
             <div class="contact_form">
                 <h3>Fale conosco</h3>
@@ -404,12 +413,12 @@
                 </form>
             </div>
 
-
         </div>
 
-        <div class="page-bottom">
+        <div class="secondary_footer_information">
             Desenvolvido por Marcelo H / first3numbers
         </div>
+
     </footer>
 
 </body>

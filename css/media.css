@@ -1,0 +1,75 @@
+@media(max-width: 768px) {
+
+body {
+    background-color: #ffffff;
+    display: block;
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh  auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:#ffcc00;
+     position: static;
+
+    grid-area: header;
+}
+
+.main_content {
+    background-color: #ffffff;
+    padding: 2%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 150px;
+    height: auto;
+    position: inherit;
+    background: #DFDBDB;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.main_header_nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;   
+
+}
+ .contactImg{
+max-height: 300px;
+max-width: 300px;
+
+ }
+
+ }
