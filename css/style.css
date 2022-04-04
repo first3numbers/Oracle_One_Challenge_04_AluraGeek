@@ -38,9 +38,13 @@ header {
 .banner {
     margin-top: 45px;
     width: 100%;
-    height: 250px;
+    max-height: 250px;
 
-    background-color: red;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 45px);
 }
 
 .btn {
@@ -86,8 +90,8 @@ section {
 }
 
 .card {
-    max-width: 150px;
-    max-height: 200px;
+    max-width: 200px;
+    max-height: 250px;
     width: 100%;
     height: 100%;
 
@@ -106,8 +110,8 @@ section {
 }
 
 .card .card_icon {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 200px;
+    max-height: 200px;
     height: 100%;
     width: 100%;
     background-position: center center;
