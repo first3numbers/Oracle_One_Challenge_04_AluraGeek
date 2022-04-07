@@ -18,12 +18,16 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 header {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #ffffff;
 
     padding: 0.5rem;
@@ -35,17 +39,30 @@ header {
     grid-area: header;
 }
 
+.header_first_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_first_section__element {
+    margin-left: 50px;
+}
+
 .searchbar {
-    background-color: #f1f1f1;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    background-color: lightgrey;
     border-radius: 30px;
-    align-items: flex-end;
-    width: 300px;
 }
 
 .search {
     background-color: inherit;
+    width: 280px;
     border-radius: 30px;
 }
+
 
 .banner {
     display: flex;
@@ -84,7 +101,8 @@ header {
     text-decoration: none;
 }
 
-#banner_btn {
+#banner_btn,
+#footer_btn {
     background-color: #2a7ae4;
     color: white;
 }
@@ -137,6 +155,8 @@ section {
     max-height: 250px;
     width: 100%;
     height: 100%;
+
+    margin-bottom: 30px;
 
     height: auto;
     position: inherit;
@@ -266,5 +286,58 @@ input::placeholder {
 footer {
     background-color: #eaf2fd;
     grid-area: footer;
-    text-align: center;
+}
+
+.main_footer_elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main_footer_elements:nth-child(1) {
+    align-items: flex-start;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 45px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.footer_title {
+    align-items: inherit;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 500px;
+    border-radius: 3px;
+    padding: 1%;
+}
+
+.input_label {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: lightgray;
+    font-weight: bold;
+}
+
+.contact_input {
+    background: none;
 }

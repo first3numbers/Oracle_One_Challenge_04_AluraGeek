@@ -13,20 +13,35 @@
 <body>
 
     <header>
-        <div class="title">
-            <img src="./img/Logo.png">
+
+        <div class="header_first_section">
+
+            <div class="header_first_section__element">
+                <div class="title">
+                    <img src="./img/Logo.png">
+                </div>
+            </div>
+
+            <div class="header_first_section__element">
+                <div class="searchbar">
+                    <input type="text" class="search" name="search" placeholder="O que deseja procurar?">
+                    <img src="./img/search.png" class="search_icon">
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="searchbar">
-            <input type="text" class="search" name="search" placeholder="O que deseja procurar?">
-            <img src="./img/search.png">
+        <div class="header_second_section">
+
+            <div class="header_links">
+                <nav class="main_header_nav">
+                    <a href="#" class="btn" id="header_btn">Iniciar Sessão</a></li>
+                </nav>
+            </div>
+
         </div>
 
-        <div class="header_links">
-            <nav class="main_header_nav">
-                <a href="#" class="btn" id="header_btn">Iniciar Sessão</a></li>
-            </nav>
-        </div>
     </header>
 
     <div class="banner">
@@ -453,47 +468,59 @@
     <footer>
 
         <div class="main_footer_elements">
-            <nav>
-                <div class="title">
-                    <img src="./img/Logo.png">
-                </div>
 
-                <div contact="footer_links">
-                    <a href="#">Quem somos nós</a>
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Programa de fidelidade</a>
-                    <a href="#">Nossas lojas</a>
-                    <a href="#">Quero ser franqueado</a>
-                    <a href="#">Anuncie aqui</a>
-                    </ul>
-                </div>
+            <div class="footer_title">
+                <img src="./img/Logo.png">
+            </div>
 
-            </nav>
+
+            <div class="footer_links">
+                <a href="#">Quem somos nós</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Programa de fidelidade</a>
+                <a href="#">Nossas lojas</a>
+                <a href="#">Quero ser franqueado</a>
+                <a href="#">Anuncie aqui</a>
+                </ul>
+            </div>
 
 
             <div class="contact_form">
                 <h3>Fale conosco</h3>
 
-                <form>
+                <form class="contact_form">
 
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome">
+                    <div class="input_field">
 
-                    <label for="message">Escreva sua mensagem</label>
-                    <textarea name="message" style="resize: none;"></textarea>
+                        <div class="input_label">
+                            <label for="nome">Nome</label>
+                        </div>
 
-                    <button type="submit" class="btn">Enviar mensagem</button>
+                        <input type="text" name="nome" class="contact_input">
+                    </div>
+
+                    <div class="input_field">
+
+                        <div class="input_label">
+                            <label for="message">Escreva sua mensagem</label>
+                        </div>
+
+                        <textarea name="message" style="resize: none;" class="contact_input"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn" id="footer_btn">Enviar mensagem</button>
 
                 </form>
             </div>
 
         </div>
 
-        <div class="secondary_footer_information">
-            Desenvolvido por Marcelo H / first3numbers
-        </div>
-
     </footer>
+
+    <div class="secondary_footer_information">
+        Desenvolvido por Marcelo H / first3numbers
+    </div>
 
 </body>
 
