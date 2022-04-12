@@ -34,7 +34,7 @@ header {
     position: fixed;
     height: 5%;
     width: calc(100% - 15px);
-
+    box-shadow: 10px 1px 5px #2a7be44b;
 
     grid-area: header;
 }
@@ -50,17 +50,22 @@ header {
 }
 
 .searchbar {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 350px;
-    background-color: lightgrey;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
     border-radius: 30px;
 }
 
 .search {
     background-color: inherit;
-    width: 280px;
-    border-radius: 30px;
+    width: 300px;
+}
+
+.searchbar_icon {
+    width: 50px;
 }
 
 
@@ -133,6 +138,19 @@ section {
     flex-direction: column;
 }
 
+.row_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.row_header__more {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2a7ae4;
+}
+
 #about_me {
     display: flex;
     flex-direction: row;
@@ -145,14 +163,13 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .card {
-    max-width: 200px;
-    max-height: 250px;
+    max-width: 250px;
+    max-height: 350px;
     width: 100%;
     height: 100%;
 
@@ -172,8 +189,8 @@ section {
 }
 
 .card .card_icon {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     height: 100%;
     width: 100%;
     background-position: center center;
@@ -252,6 +269,7 @@ span {
 input,
 textarea {
     border: none;
+    outline-width: 0;
     appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -261,8 +279,11 @@ textarea {
     border-radius: 3px;
 }
 
-input:focus::placeholder {
-    color: transparent;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 input::placeholder {
@@ -312,8 +333,25 @@ footer {
 
 }
 
+.secondary_footer_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-height: 40px;
+    background-color: white;
+
+    font-weight: bold;
+}
+
 .footer_title {
     align-items: inherit;
+}
+
+#footer_btn {
+    max-width: 200px;
+    width: 100%;
 }
 
 .contact_form {
@@ -332,8 +370,7 @@ footer {
 }
 
 .input_label {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 5px;
     color: lightgray;
     font-weight: bold;
 }
