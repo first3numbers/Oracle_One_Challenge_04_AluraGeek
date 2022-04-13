@@ -1,0 +1,46 @@
+.btn {
+    padding: 10px;
+    text-decoration: none;
+}
+
+#banner_btn,
+#footer_btn {
+    background-color: #2a7ae4;
+    color: white;
+}
+
+#header_btn {
+    background-color: none;
+    color: #a7c9f4;
+    border: 2px solid #a7c9f4;
+}
+
+input,
+textarea {
+    border: none;
+    outline-width: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+#footer_btn {
+    max-width: 200px;
+    width: 100%;
+}
