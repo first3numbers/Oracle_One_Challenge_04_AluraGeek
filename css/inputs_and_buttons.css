@@ -44,3 +44,12 @@ input::placeholder {
     max-width: 200px;
     width: 100%;
 }
+
+#login_btn {
+    background-color: #2a7ae4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}

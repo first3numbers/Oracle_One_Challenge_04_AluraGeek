@@ -56,19 +56,46 @@
 
     <main>
 
-        <div class="login_form">
+        <div class="add_new_product_section">
 
-            <div class="form_title">
-                <h2>Iniciar Sessão</h2>
+            <div class="section_title">
+                <h2>Adicionar novo produto</h2>
+            </div>
+
+            <div class="submit_product_image">
+
             </div>
 
             <div class="form_input">
+
                 <form class="form_input">
-                    <input type="email" class="form_input_field" placeholder="Escreva seu e-mail">
-                    <br>
-                    <input class="form_input_field" type="password" placeholder="Escreva seu e-mail">
-                    <br>
-                    <a href="#" class="btn" id="login_btn" type="submit">Entrar</a>
+
+                    <div class="input_field">
+
+                        <div class="input_label">
+                            <label for="product_name">Nome do produto</label>
+                        </div>
+
+                        <input type="text" name="product_name" class="contact_input">
+                    </div>
+
+                    <div class="input_field">
+
+                        <div class="input_label">
+                            <label for="product_price">Preço do produto</label>
+                        </div>
+
+                        <input type="number" name="product_price" class="contact_input">
+                    </div>
+
+                    <div class="input_field">
+
+                        <div class="input_label">
+                            <label for="product_desc">Descrição do produto</label>
+                        </div>
+
+                        <textarea name="product_desc" style="resize: none;" class="contact_input"></textarea>
+                    </div>
 
                 </form>
             </div>
