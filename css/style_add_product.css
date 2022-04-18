@@ -10,7 +10,7 @@ body {
         "footer";
 
     grid-template-columns: auto;
-    grid-template-rows: 50px 95vh auto;
+    grid-template-rows: 50px 100vh auto;
 }
 
 html {
@@ -107,4 +107,36 @@ main {
     grid-area: main;
     margin-top: 15%;
     max-width: 100%;
+}
+
+.add_new_product_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload_product_images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.upload_from_clipboard {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 200px;
+    max-height: 350px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
 }
