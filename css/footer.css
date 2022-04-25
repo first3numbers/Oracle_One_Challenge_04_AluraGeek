@@ -14,6 +14,7 @@
 footer {
     background-color: #eaf2fd;
     grid-area: footer;
+    position: static;
 }
 
 .main_footer_elements {
