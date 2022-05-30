@@ -64,7 +64,10 @@
 
             <div class="form_input">
                 <form class="form_input">
-                    <input type="email" class="form_input_field" placeholder="Escreva seu e-mail">
+                    <input type="email" class="form_input_field" placeholder="Escreva seu e-mail" type="email"
+                        id="text-input" name="name" size="10"
+                        pattern="^(?:(?:[\w\.\-_]+@[\w\d]+(?:\.[\w]{2,6})+)[,;]?\s?)+$" data-type="emailAddress"
+                        style="resize: none" required">
                     <br>
                     <input class="form_input_field" type="password" placeholder="Escreva sua senha">
                     <br>
@@ -138,7 +141,7 @@
 
     </footer>
 
-
+    <script src="./js/index.js" type="module"></script>
 
 </body>
 

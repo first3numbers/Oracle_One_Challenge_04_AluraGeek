@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/inputs_and_buttons.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/reset.css">
+
     <title>AluraGeek</title>
 </head>
 
@@ -101,17 +102,17 @@
 
                 <div class="card" id="hobbies">
 
-                    <div class="card_image">
+                    <div class="card_image" data-icon>
                         <img src="./img/product01.png" class="card_icon">
                     </div>
 
                     <div class="card_information">
 
-                        <div class="card_title">
+                        <div class="card_title" data-title>
                             Produto XYZ
                         </div>
 
-                        <div class="card_text">
+                        <div class="card_text" data-price>
                             R$ 60,00
                             <a href="#" class="go-to-product">Ver produto</a>
 
@@ -122,18 +123,18 @@
 
                 <div class="card" id="hobbies">
 
-                    <div class="card_image">
+                    <div class="card_image" data-icon>
                         <img src="./img/product02.png" class="card_icon">
                     </div>
 
                     <div class="card_information">
-                        <div class="card_title">
+                        <div class="card_title" data-title="">
                             Produto XYZ
                         </div>
 
-                        <div class="card_text">
+                        <div class="card_text" data-price>
                             R$ 60,00
-                            <a href="" class="go-to-product">Ver produto</a>
+                            <a href="#" class="go-to-product">Ver produto</a>
                         </div>
                     </div>
 
@@ -538,7 +539,10 @@
                             <label for="nome">Nome</label>
                         </div>
 
-                        <input type="text" name="nome" class="contact_input">
+                        <input type="text" name="nome" data_type="fullName" class="contact_input" maxlength="30"
+                            pattern="^(?=.*[a-z])(?!.*[ !@#$%^&*_=+-]).{3,30}$" style="resize: none" minlength="3"
+                            required>
+                        <span class="input-error-message"></span>
                     </div>
 
                     <div class="input_field">
@@ -568,7 +572,7 @@
 
     </footer>
 
-
+    <script src="./js/index.js" type="module"></script>
 
 </body>
 
